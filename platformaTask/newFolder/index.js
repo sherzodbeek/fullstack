@@ -1,1 +1,2 @@
-console.log("Test")
+// console.log("Test")
+var a = 10;
