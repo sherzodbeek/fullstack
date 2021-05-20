@@ -1,0 +1,83 @@
+$bg-color: #EEEEEE;
+$primary-color: #009688;
+$text-color: #949494;
+
+body {
+  background-color: $bg-color;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 250px;
+  display: flex;
+  margin: 100px auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+%input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid $text-color;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+}
+.input-1 {
+  @extend %input;
+}
+
+.input-1:focus {
+  outline: none;
+  caret-color: $primary-color;
+  border-bottom: 1.5px solid $primary-color;
+}
+
+.i-disabled:disabled {
+  @extend %input;
+  border-bottom: 1.5px dotted $text-color;
+  margin-top: 50px;
+}
+
+.incorrect-input {
+  @extend %input;
+  margin-bottom: 5px;
+}
+
+.incorrect-input:focus {
+  outline: none;
+  caret-color: $primary-color;
+  border-bottom: 1.5px solid $primary-color;
+}
+
+
+.error {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    color: red;
+    margin: 0;
+    font-size: 8px;
+  }
+  img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.incorrect-input:not(:focus):not(:placeholder-shown) {
+  border-bottom: 1.5px solid red;
+}
+
+.incorrect-input:not(:focus):not(:placeholder-shown) ~ .error {
+  display: flex;
+}
+
+
+
+

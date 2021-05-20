@@ -1,0 +1,58 @@
+body {
+  background-color: #EEEEEE;
+  font-family: sans-serif; }
+
+.wrapper {
+  width: 250px;
+  display: flex;
+  margin: 100px auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.input-1, .i-disabled:disabled, .incorrect-input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid #949494;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+  margin-bottom: 50px; }
+
+.input-1:focus {
+  outline: none;
+  caret-color: #009688;
+  border-bottom: 1.5px solid #009688; }
+
+.i-disabled:disabled {
+  border-bottom: 1.5px dotted #949494;
+  margin-top: 50px; }
+
+.incorrect-input {
+  margin-bottom: 5px; }
+
+.incorrect-input:focus {
+  outline: none;
+  caret-color: #009688;
+  border-bottom: 1.5px solid #009688; }
+
+.error {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between; }
+  .error p {
+    color: red;
+    margin: 0;
+    font-size: 8px; }
+  .error img {
+    width: 10px;
+    height: 10px; }
+
+.incorrect-input:not(:focus):not(:placeholder-shown) {
+  border-bottom: 1.5px solid red; }
+
+.incorrect-input:not(:focus):not(:placeholder-shown) ~ .error {
+  display: flex; }
+
+/*# sourceMappingURL=main.css.map */

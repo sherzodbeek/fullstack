@@ -1,0 +1,138 @@
+$bl-bg-color: #EEEEEE;
+$primary: #009688;
+$flat-bg-color: #DDDDDD;
+$flat-db-color: #949494;
+$raised-bg-color: #39A197;
+$raised-db-color: #C5C5C5;
+$text-color: #6E6E6E;
+$shadow-color: #ADADAD;
+$white: #ffffff;
+
+
+// circle btn
+%circle {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $primary;
+  cursor: pointer;
+  p {
+    margin: 0;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+.circle-flat {
+  @extend %circle;
+  box-shadow: 0 3px 3px $shadow-color;
+}
+
+.circle-raised {
+  @extend %circle;
+  box-shadow: 0 8px 8px $shadow-color;
+}
+
+
+//btn
+.btn {
+  padding: 10px 15px;
+  width: 100px;
+  border: none;
+  font-weight: bolder;
+  border-radius: 3px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+
+@mixin f-btn-effect($pr, $ac) {
+  color: $pr;
+  &:active {
+    background-color: $ac;
+  }
+  &:disabled {
+    color: #7A7A7A;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+@mixin r-btn-effect($pr, $bg, $ac, $ds) {
+  color: $pr;
+  background-color: $bg;
+  &:active {
+    background-color: $ac;
+    box-shadow: 0 5px 5px $shadow-color;
+  }
+  &:disabled {
+    color: #7A7A7A;
+    background-color: $ds;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+
+.f-normal {
+    @include f-btn-effect($primary, $flat-bg-color);
+}
+.f-pressed {
+  @include f-btn-effect($primary, $flat-bg-color);
+  background-color: $flat-bg-color;
+}
+.f-disabled {
+  @include f-btn-effect($primary, $flat-bg-color);
+}
+
+.r-normal {
+  @include r-btn-effect($white, $primary, $raised-bg-color, $raised-db-color);
+}
+
+.r-pressed {
+  @include r-btn-effect($white, $primary, $raised-bg-color, $raised-db-color);
+  background-color: $raised-bg-color;
+  box-shadow: 0 5px 5px $shadow-color;
+}
+.r-disabled {
+  @include r-btn-effect($white, $primary, $raised-bg-color, $raised-db-color);
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: white;
+  color: $text-color;
+}
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .block {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: $bl-bg-color;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+

@@ -1,0 +1,428 @@
+$bg-color: #EEEEEE;
+$primary-color: #009688;
+$secondary-color: rgba(187, 187, 187, 0.6);
+$info-color: #00BBD3;
+$m-card-bg-color-1: #3E50B4;
+$m-card-bg-color-2: #36474F;
+$btn-bg-color: #455A64;
+
+
+body {
+  background-color: $bg-color;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 650px;
+  margin: 100px auto;
+}
+
+hr {
+  margin: 0;
+  background-color: $secondary-color;
+  border: 0.5px solid $secondary-color;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.left {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  .header {
+    background-color: $primary-color;
+    display: flex;
+    align-items: end;
+
+    p {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+      padding: 100px 25px 10px 10px;
+    }
+  }
+
+  .body {
+    background-color: white;
+
+    p {
+      padding: 5px 25px 15px 10px;
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    background-color: white;
+
+    a {
+      padding: 10px;
+      font-weight: bolder;
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  }
+}
+
+.mini-card {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+
+  .card-left {
+    width: 25%;
+    background-color: $secondary-color;
+  }
+
+  .card-right {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    .body {
+      h3 {
+        font-weight: bolder;
+        margin: 10px 10px 5px 10px;
+      }
+
+      p {
+        color: $secondary-color;
+        font-size: 14px;
+        margin: 0 0 20px 10px;
+      }
+    }
+
+    .footer {
+      display: flex;
+      background-color: white;
+      margin-right: 40px;
+
+      a {
+        padding: 10px;
+        font-weight: bolder;
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+
+.alert-card {
+  width: 100%;
+  background-color: white;
+
+  .header {
+    h3 {
+      color: $primary-color;
+      margin: 10px 100px 10px 10px;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0 100px 40px 10px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    background-color: white;
+    margin-right: 40px;
+
+    a {
+      padding: 15px;
+      font-weight: bolder;
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  }
+}
+
+
+.main-note {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .header {
+    background-color: $info-color;
+    display: flex;
+    align-items: end;
+
+    p {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+      padding: 100px 25px 10px 10px;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    background-color: white;
+
+    .images {
+      width: 25%;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 10px 10px 200px;
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+
+.mini-notes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mini-note-1 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .header {
+    background-color: $m-card-bg-color-1;
+    display: flex;
+    align-items: end;
+
+    p {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+      padding: 85px 25px 10px 10px;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    .images {
+      width: 80%;
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+.mini-note-2 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .header {
+    background-color: $primary-color;
+    display: flex;
+    align-items: end;
+
+    p {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+      padding: 85px 25px 10px 10px;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    .images {
+      width: 80%;
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+
+.mini-note-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+
+  .header {
+    background-color: $m-card-bg-color-1;
+    display: flex;
+    align-items: end;
+
+    p {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+      padding: 10px 25px 20px 10px;
+    }
+  }
+
+  hr {
+    margin: 0;
+    background-color: $secondary-color;
+    border: 0.5px solid $secondary-color;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    background-color: $m-card-bg-color-1;
+
+    p {
+      font-size: 10px;
+      color: white;
+      margin: 10px 45px 10px 10px;
+    }
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.mini-note-4 {
+  background-color: $m-card-bg-color-2;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    p {
+      margin-left: 10px;
+      margin-bottom: 15px;
+      color: #d7d6d6;
+      font-size: 10px;
+    }
+  }
+
+  .body {
+    margin-left: 10px;
+
+    label span {
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+      border-radius: 2px;
+      border: 2px solid #d7d6d6;
+
+      .check {
+        display: none;
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    input[type=checkbox]:checked + label span .check {
+      display: block;
+    }
+
+    input {
+      display: none;
+    }
+
+    p {
+      margin: 0;
+      color: #d7d6d6;
+      font-size: 13px;
+    }
+
+    .checks {
+      display: flex;
+      margin-bottom: 10px;
+    }
+  }
+
+  hr {
+    margin: 0;
+    background-color: $secondary-color;
+    border: 0.5px solid $secondary-color;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    background-color: $m-card-bg-color-2;
+
+    p {
+      font-size: 10px;
+      color: #d7d6d6;
+      margin: 10px 70px 10px 10px;
+    }
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+.note-and-button {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  button {
+    background-color: $btn-bg-color;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }
+}

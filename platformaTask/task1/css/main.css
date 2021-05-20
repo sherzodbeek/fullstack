@@ -1,0 +1,126 @@
+.circle-flat, .circle-raised {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #009688;
+  cursor: pointer; }
+  .circle-flat p, .circle-raised p {
+    margin: 0;
+    font-size: 15px;
+    color: white; }
+
+.circle-flat {
+  box-shadow: 0 3px 3px #ADADAD; }
+
+.circle-raised {
+  box-shadow: 0 8px 8px #ADADAD; }
+
+.btn {
+  padding: 10px 15px;
+  width: 100px;
+  border: none;
+  font-weight: bolder;
+  border-radius: 3px;
+  margin: 20px 20px;
+  cursor: pointer; }
+
+.f-normal {
+  color: #009688; }
+  .f-normal:active {
+    background-color: #DDDDDD; }
+  .f-normal:disabled {
+    color: #7A7A7A;
+    cursor: default;
+    pointer-events: none; }
+
+.f-pressed {
+  color: #009688;
+  background-color: #DDDDDD; }
+  .f-pressed:active {
+    background-color: #DDDDDD; }
+  .f-pressed:disabled {
+    color: #7A7A7A;
+    cursor: default;
+    pointer-events: none; }
+
+.f-disabled {
+  color: #009688; }
+  .f-disabled:active {
+    background-color: #DDDDDD; }
+  .f-disabled:disabled {
+    color: #7A7A7A;
+    cursor: default;
+    pointer-events: none; }
+
+.r-normal {
+  color: #ffffff;
+  background-color: #009688; }
+  .r-normal:active {
+    background-color: #39A197;
+    box-shadow: 0 5px 5px #ADADAD; }
+  .r-normal:disabled {
+    color: #7A7A7A;
+    background-color: #C5C5C5;
+    cursor: default;
+    pointer-events: none; }
+
+.r-pressed {
+  color: #ffffff;
+  background-color: #009688;
+  background-color: #39A197;
+  box-shadow: 0 5px 5px #ADADAD; }
+  .r-pressed:active {
+    background-color: #39A197;
+    box-shadow: 0 5px 5px #ADADAD; }
+  .r-pressed:disabled {
+    color: #7A7A7A;
+    background-color: #C5C5C5;
+    cursor: default;
+    pointer-events: none; }
+
+.r-disabled {
+  color: #ffffff;
+  background-color: #009688; }
+  .r-disabled:active {
+    background-color: #39A197;
+    box-shadow: 0 5px 5px #ADADAD; }
+  .r-disabled:disabled {
+    color: #7A7A7A;
+    background-color: #C5C5C5;
+    cursor: default;
+    pointer-events: none; }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: white;
+  color: #6E6E6E; }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  width: 1200px;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .wrapper .block {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #EEEEEE;
+    width: 30%;
+    display: flex;
+    justify-content: space-around; }
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */
